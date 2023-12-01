@@ -146,7 +146,7 @@ body{margin-top: 80px !important;overflow: auto !important;height: 100% !importa
 .itemBox .btnGet{opacity: 0;position: absolute;top: 0;left: 0;width: 100%;height: 100%;background: #FF4655;font-size: 20px;color: #ECE8E1;font-weight: 700;text-align: center;pointer-events: none;cursor: pointer;}
 .itemBox .btnGet span{position: relative;display: flex;align-items: center;justify-content: center;width: 100%;height: 100%;z-index: 2;}
 .btnQuestion {display: inline-block;width: 16px;height: 16px;margin-left: 4px;background-image: url(../images/icon_question.svg);background-position: center;background-repeat: no-repeat;overflow: hidden;text-indent: -9999px;white-space: nowrap;vertical-align: -3px;}
-.btnSpecialGet {position: absolute;left: 0;bottom: -30px;width: 100%;font-size: 14px;color: #FF4655;font-weight: 700;line-height: 140%;text-align: center;text-decoration-line: underline;}
+.btnSpecialGet {position: absolute;left: 0;bottom: -30px;width: calc(100% - -8px);font-size: 14px;color: #FF4655;font-weight: 700;line-height: 140%;text-align: center;text-decoration-line: underline;}
 .btnSpecialGet[disabled] {color: #BBB;cursor: default;}
 .itemGroup .item.on .num, .itemGroup .item.end .num {border-color: #FF4655;}
 .itemGroup .item.on .num span, .itemGroup .item.end .num span {color: #FF4655;}
