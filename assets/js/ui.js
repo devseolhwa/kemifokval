@@ -13,7 +13,7 @@ $(function () {
     let filter = "win16|win32|win64|mac";
     if(navigator.platform){
         if(0 > filter.indexOf(navigator.platform.toLowerCase())){
-            //alert("Mobile");
+            alert("Mobile");
             $("body").addClass("mobileFilter");
             $(".floating").show();
             // 안드로이드 hover 이슈로 인해 touch 추가 
@@ -22,8 +22,7 @@ $(function () {
                 $(this).addClass("active").parents().siblings(".item ").children(".itemBox").removeClass("active");
             });
         }else{
-            //alert("PC");
-            //snapscroll();
+            alert("PC");
             // floating 스크롤후 나타나기
             $(window).scroll(function () {
                 if ($(this).scrollTop() > 100) {
