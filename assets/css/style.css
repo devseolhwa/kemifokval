@@ -65,7 +65,7 @@ body{margin-top: 80px !important;overflow: auto !important;height: 100% !importa
 .btnLine .btn{margin: 6px;}
 #btnEvent{width: 371px;height: 74px;}
 #btnTable{width: 360px;padding: 20px 30px;-webkit-transition: width 0.5s, -webkit-transform 0.5s;transition: width 0.5s, transform 0.5s, -webkit-transform 0.5s;}
-#btnTable i.arr{display: inline-block;width: 21px;height: 15px;margin-left: 5px;background-image: url(../images/arr_icon.png);background-repeat: no-repeat;transition: .5s;-webkit-transition: .5s;}
+#btnTable i.arr{display: inline-block;width: 21px;height: 15px;margin-left: 5px;background-image: url(../images/arr_icon.svg);background-repeat: no-repeat;transition: .5s;-webkit-transition: .5s;}
 #btnTable.active{width: 100%;-webkit-transition: width 0.5s, -webkit-transform 0.5s;transition: width 0.5s, transform 0.5s, -webkit-transform 0.5s;}
 #btnTable.active i.arr{transform: rotate(180deg);}
 .btnEventInfo {font-size: 16px;color: #494949;font-weight: 600;line-height: 150%;text-decoration-line: underline;}
@@ -123,11 +123,11 @@ body{margin-top: 80px !important;overflow: auto !important;height: 100% !importa
 .CheckTitle{width: 32px;height: 210px;margin-top: 47px;margin-right: 8px;}
 .CheckTitle span{display: block;width: 100%;height: 100%;background-position: center;background-repeat: no-repeat;overflow: hidden;text-indent: -9999px;white-space: nowrap;}
 .allCheck .CheckTitle{background: #090909;}
-.allCheck .CheckTitle span{background-image: url(../images/text_all.png);}
+.allCheck .CheckTitle span{background-image: url(../images/text_all.svg);}
 .pcCheck{display: flex;justify-content: flex-start;flex-direction: row;flex-wrap: wrap;align-items: center;width: 100%;}
 .pcCheck:after{content: "";display: block;clear: both;}
 .pcCheck .CheckTitle{background: #FF4655;}
-.pcCheck .CheckTitle span{background-image: url(../images/text_pc.png);}
+.pcCheck .CheckTitle span{background-image: url(../images/text_pc.svg);}
 .itemGroup{width: 1336px;display: flex;align-items: flex-start;flex-direction: row;}
 .allCheck .itemGroup{width: 664px;margin-right: 74px;}
 .itemGroup .item{position: relative;}
@@ -136,7 +136,7 @@ body{margin-top: 80px !important;overflow: auto !important;height: 100% !importa
 .itemGroup .item .num span {margin-left: 8px;font-size: 24px;color: #8B978F;line-height: 1;text-align: left;font-weight: 800;letter-spacing: 0.48px;}
 .itemGroup .item .num span em{display: inline-block;width: 19px;height: 19px;margin-left: 5px;background-image: url(../images/icon_plus_blue.svg);background-position: center;background-repeat: no-repeat;border-radius: 100%;box-sizing: border-box;vertical-align: -1px;overflow: hidden;text-indent: -9999px;white-space: nowrap;}
 .itemGroup .item .itemBox {position: relative;width: 160px;height: 210px;background: #F6F4F0;}
-.itemGroup .item .itemBox:after{display: none;content: "";position: absolute;top: 0;left: 0;width: 100%;height: 100%;background-color: rgba(215, 211, 203, 0.8);background-image: url(../images/img_itemStamp.png);background-position: center;background-repeat: no-repeat;z-index: 1;}
+.itemGroup .item .itemBox:after{display: none;content: "";position: absolute;top: 0;left: 0;width: 100%;height: 100%;background-color: rgba(215, 211, 203, 0.8);background-image: url(../images/img_itemStamp.svg);background-position: center;background-repeat: no-repeat;z-index: 1;}
 .itemBox .itemImg {position: inherit;display: flex;width: 160px;height: 160px;align-items: center;justify-content: center;z-index: 1;}
 .itemBox .itemName {display: flex;justify-content: center;align-items: center;position: absolute;left: 12px;bottom: 10px;width: calc(100% - 24px);height: 40px;font-size: 14px;color: #8B978F;font-weight: 600;line-height: 150%;text-align: center;word-break: keep-all;font-family: "Pretendard", "Apple SD Gothic Neo";z-index: 1;}
 .itemBox .itemName .total{font-size: 20px;color: #222;font-weight: 700;}
@@ -145,7 +145,7 @@ body{margin-top: 80px !important;overflow: auto !important;height: 100% !importa
 .itemBox .itemName.dayEight .total{margin-left: 20px;}
 .itemBox .btnGet{opacity: 0;position: absolute;top: 0;left: 0;width: 100%;height: 100%;background: #FF4655;font-size: 20px;color: #ECE8E1;font-weight: 700;text-align: center;pointer-events: none;cursor: pointer;transition: .3s;-webkit-transition: .3s;}
 .itemBox .btnGet span{position: relative;display: flex;align-items: center;justify-content: center;width: 100%;height: 100%;z-index: 2;}
-.btnQuestion {display: inline-block;width: 16px;height: 16px;margin-left: 4px;background-image: url(../images/icon_question.png);background-position: center;background-repeat: no-repeat;overflow: hidden;text-indent: -9999px;white-space: nowrap;vertical-align: -3px;}
+.btnQuestion {display: inline-block;width: 16px;height: 16px;margin-left: 4px;background-image: url(../images/icon_question.svg);background-position: center;background-repeat: no-repeat;overflow: hidden;text-indent: -9999px;white-space: nowrap;vertical-align: -3px;}
 .btnSpecialGet {position: absolute;left: 0;bottom: -30px;width: 100%;font-size: 14px;color: #FF4655;font-weight: 700;line-height: 140%;text-align: center;text-decoration-line: underline;}
 .btnSpecialGet[disabled] {color: #BBB;cursor: default;}
 .itemGroup .item.on .num, .itemGroup .item.end .num {border-color: #FF4655;}
