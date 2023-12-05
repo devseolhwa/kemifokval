@@ -108,7 +108,7 @@ $(function () {
             slidesToShow : 3,
             slidesToScroll: "auto",
             autoplay: true,
-            autoplaySpeed: 3000,
+            autoplaySpeed: 1000,
             speed: 800,
             centerMode: true,
             //centerPadding : "200px", 

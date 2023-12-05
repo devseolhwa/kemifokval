@@ -8,9 +8,9 @@ body{margin-top: 80px !important;overflow: auto !important;height: 100% !importa
 
 /* visual */
 .visual {position: relative;min-width: 1440px;overflow: hidden;}
-.visualBg {text-align: center;-webkit-animation: zoom 2s ease-in-out both;-moz-animation: zoom 2s ease-in-out both;-ms-animation: zoom 2s ease-in-out both;-o-animation: zoom 2s ease-in-out both;animation: zoom 2s ease-in-out both;}
+.visualBg {width: 100%;height: 800px;max-height: 100%;overflow: hidden;}
 .visualBg:before {content: "";position: absolute;left: 0;top: 0;display: block;width: 100%;height: 100%;background: rgba(0, 0, 0, 0.4);}
-.visualBg img{width: 100%;}
+.visualBg video {width: 100%;height: 100%;-o-object-fit: cover;object-fit: cover;-o-object-position: center;object-position: center;}
 .visualText {position: absolute;left: 50%;top: 50%;transform: translate(-50%, -50%);margin-top: -70px;}
 .valorantVisual{position: relative;text-align: center;}
 .valorantVisual p{margin-top: 28px;font-size: 105px;color: #FFF;font-weight: 400;line-height: 100%;letter-spacing: -2.1px;font-family: "Black Han Sans", "Apple SD Gothic Neo";}
@@ -99,7 +99,7 @@ body{margin-top: 80px !important;overflow: auto !important;height: 100% !importa
 .svgEffect{position: absolute;}
 .svgEffect.front{z-index: 1;}
 .svgEffect.back{z-index: -1;}
-.svgEffect01 {top: 77px;left: 0;width: 723px;height: 36px;background-color: #FF4655;transform: scaleX(0);transform-origin: left center;transition: transform 1.2s ease-in-out;}
+.svgEffect01 {top: 77px;left: -8px;width: 770px;height: 36px;background-color: #FF4655;transform: scaleX(0);transform-origin: left center;transition: transform 1.2s ease-in-out;}
 .svgEffect01.active{transform: scaleX(1);}
 .svgEffect02 {top: 60px;left: -3px;width: 574px;height: 24px;background: linear-gradient(91deg, #6B11DA -2.43%, #35B5A6 99.54%);transform: scaleX(0);transform-origin: left center;transition: transform 1.2s ease-in-out;}
 .svgEffect02.active{transform: scaleX(1);}
@@ -111,7 +111,7 @@ body{margin-top: 80px !important;overflow: auto !important;height: 100% !importa
 .upEffect{-webkit-transform: translateY(115%);transform: translateY(115%);-webkit-transition: -webkit-transform .65s cubic-bezier(.25,.46,.45,.94);transition: -webkit-transform .65s cubic-bezier(.25,.46,.45,.94);transition: transform .65s cubic-bezier(.25,.46,.45,.94);transition: transform .65s cubic-bezier(.25,.46,.45,.94),-webkit-transform .65s cubic-bezier(.25,.46,.45,.94);}
 .upEffect.active{-webkit-transform: translateY(0);transform: translateY(0);}
 
-/* 파티플레이 미션 */
+/* 파티 플레이 미션 */
 .numberSection{position: relative;overflow: hidden;}
 .numberInner{position: relative;width: 1440px;margin: 0 auto;padding: 154px 0 163px;box-sizing: border-box;}
 .inner1376{width: 1376px;margin: 0 auto;}
@@ -202,7 +202,7 @@ body{margin-top: 80px !important;overflow: auto !important;height: 100% !importa
 .slideSection{display: flex;justify-content: center;align-items: center;height: auto;padding: 180px 0 190px;background-color: #292929;box-sizing: border-box;}
 .slideSection .slideSectionInner{width: 100%;min-width: 1440px;}
 .slideSection h5{margin-top: 100px;padding-bottom: 40px;font-size: 50px;color: #ECE8E1;font-weight: 400;line-height: 100%;letter-spacing: -1px;font-family: "Black Han Sans", "Apple SD Gothic Neo";text-align: center;}
-.slideBoxWrap{position: relative;padding-top: 52px;margin-bottom: 144px;box-sizing: border-box;height: 100%;}
+.slideBoxWrap{position: relative;padding-top: 62px;margin-bottom: 144px;box-sizing: border-box;height: 100%;}
 .slideBoxWrap:before {content: "";position: absolute;left: 50%;top: 0;margin-left: -3px;display: block;width: 819px;height: 512px;transform: translate(-50%, 0);background-image: url(../images/bg_slideBox.png);background-position: center;background-size: 100%;background-repeat: no-repeat;}
 .slideBox{position: relative;height: 100%;box-sizing: border-box;margin-bottom: 0 !important;}
 .slideBox .slick-slide{padding: 0 10px;}
@@ -230,8 +230,8 @@ body{margin-top: 80px !important;overflow: auto !important;height: 100% !importa
 .offEventSection{display: flex;justify-content: center;align-items: center;height: auto;padding: 160px 0 140px;box-sizing: border-box;}
 .offEventInner{margin: 0 auto;width: 1440px;}
 .offEventTitle{position: relative;}
-.offEventTitle:before{content: "";position: absolute;left: 23px;top: 0; display: block;width: 179px;height: 225px;background-image: url(../images/img_left_character.png);background-position: center;background-repeat: no-repeat;}
-.offEventTitle:after{content: "";position: absolute;right: 15px;top: 0; display: block;width: 188px;height: 225px;background-image: url(../images/img_right_character.png);background-position: center;background-repeat: no-repeat;}
+.offEventTitle:before{content: "";position: absolute;left: 23px;top: 0; display: block;width: 188px;height: 225px;background-image: url(../images/img_left_character.gif);background-position: center;background-repeat: no-repeat;}
+.offEventTitle:after{content: "";position: absolute;right: 15px;top: 0; display: block;width: 188px;height: 225px;background-image: url(../images/img_right_character.gif);background-position: center;background-repeat: no-repeat;}
 .offEventBg{padding: 60px 32px 0;box-sizing: border-box;}
 .offEventBg a{position: relative;display: block;width: 100%;padding: 46.294% 0 0;background-color: #BFBFBF;}
 .offEventBg a img {position: absolute;top: 0;left: 0;width: 100%;height: 100%;object-fit: cover;}
@@ -245,9 +245,11 @@ body{margin-top: 80px !important;overflow: auto !important;height: 100% !importa
 .eventInfoInner ul li span{font-weight: 600;border-bottom: 1px solid #5C5852;}
 
 /* error */
-.error {position: relative;display: flex;align-items: center;justify-content: center;flex-direction: column;height: 100vh;margin-top: -80px;background-image: url(../images/bg_error.jpg);background-position: center;background-size: cover;background-repeat: no-repeat;}
-.error:before {content: "";position: absolute;left: 0;top: 0;width: 100%;height: 100%;background: rgba(30, 30, 30, 0.60);backdrop-filter: blur(13px);-webkit-backdrop-filter: blur(13px);}
-.errorText {position: relative;margin-top: 30px;font-size: 28px;color: #ECE8E1;line-height: 170%;font-weight: 600;letter-spacing: -0.02em;text-align: center;}
+.error {position: relative;display: flex;align-items: center;justify-content: center;flex-direction: column;height: 100vh;margin-top: -80px;overflow: hidden;}
+.errorBg {position: absolute;width: 100%;height: 100%;-webkit-animation: zoom 2s ease-in-out both;-moz-animation: zoom 2s ease-in-out both;-ms-animation: zoom 2s ease-in-out both;-o-animation: zoom 2s ease-in-out both;animation: zoom 2s ease-in-out both; background-image: url(../images/bg_error.jpg);background-position: center;background-size: cover;background-repeat: no-repeat;}
+.errorBg:before {content: "";position: absolute;left: 0;top: 0;display: block;width: 100%;height: 100%;background: rgba(30, 30, 30, 0.60);backdrop-filter: blur(13px);-webkit-backdrop-filter: blur(13px);}
+.errorText {position: absolute;left: 50%;top: 50%;transform: translate(-50%, -50%);}
+.errorInfo {position: relative;margin-top: 30px;font-size: 28px;color: #ECE8E1;line-height: 170%;font-weight: 600;letter-spacing: -0.02em;text-align: center;}
 #btnError {width: 280px;}
 
 .mobileFilter .upEffect{-webkit-transform: translateY(0);transform: translateY(0);}
@@ -297,22 +299,22 @@ body{margin-top: 80px !important;overflow: auto !important;height: 100% !importa
 }
 
 @-webkit-keyframes zoom {
-    0% {-webkit-transform: scale(1.05);transform: scale(1.05);}
+    0% {-webkit-transform: scale(1.1);transform: scale(1.1);}
     100% {-webkit-transform: scale(1);transform: scale(1);}
 }
 @-moz-keyframes zoom {
-    0% {-webkit-transform: scale(1.05);transform: scale(1.05);}
+    0% {-webkit-transform: scale(1.1);transform: scale(1.1);}
     100% {-webkit-transform: scale(1);transform: scale(1);}
 }
 @-ms-keyframes zoom {
-    0% {-webkit-transform: scale(1.05);transform: scale(1.05);}
+    0% {-webkit-transform: scale(1.1);transform: scale(1.1);}
     100% {-webkit-transform: scale(1);transform: scale(1);}
 }
 @-o-keyframes zoom {
-    0% {-webkit-transform: scale(1.05);transform: scale(1.05);}
+    0% {-webkit-transform: scale(1.1);transform: scale(1.1);}
     100% {-webkit-transform: scale(1);transform: scale(1);}
 }
 @keyframes zoom {
-    0% {-webkit-transform: scale(1.05);transform: scale(1.05);}
+    0% {-webkit-transform: scale(1.1);transform: scale(1.1);}
     100% {-webkit-transform: scale(1);transform: scale(1);}
 }
